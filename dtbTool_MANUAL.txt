@@ -1,0 +1,10 @@
+After compiling .dtb file with kernel you have to create dt.img for boot.img
+
+Use:
+cd /path-to-your-kernel-sources/
+./dtbToolCM -2 -o ./dt.img -s 2048 -p ./scripts/dtc/ ./arch/arm/boot/
+
+You will find ready dt.img in your kernel soorce directory.
+
+To repack boot.img with your dt.img you can use Android Image Kitchen: http://forum.xda-developers.com/showthread.php?t=2073775
+(rename dt.img to <bootname>.img-dtb and put into split_img kernel after unpacking kernel)
