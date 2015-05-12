@@ -103,6 +103,8 @@ endif
 ifeq ($(CONFIG_MACH_LGE),y)
 	dtb-y += msm8226-v1-w7.dtb \
 			 msm8226-v2-w7.dtb \
+	dtb-y += msm8226-v1-w7ds.dtb \
+			 msm8226-v2-w7ds.dtb \
 
 else # not CONFIG_MACH_LGE
 	dtb-$(CONFIG_ARCH_MSM8226)	+= msm8226-sim.dtb
