@@ -1,1 +1,0 @@
-# android_kernel_lge_msm8226_w7ds
